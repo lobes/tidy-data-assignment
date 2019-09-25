@@ -102,4 +102,4 @@ final <- select(final, -(3:4))
 final <- rename(final, subject_id = 1, activity = 2)
 
 # 23. Write the data frame `final` out to the file `./data/final_data.csv`.
-write.csv(final, file = "./data/final_data.csv")
+write.table(final, file = "./data/final_data.txt", row.names = FALSE)
